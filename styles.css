@@ -1,7 +1,11 @@
-.navColor{
+.principalColor{
     background-color : #344250;
 }
 
 .mainColor{
     background-color : #213344;
+}
+
+.titleColor{
+    color: #fbfeff;
 }

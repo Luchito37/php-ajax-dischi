@@ -20,7 +20,7 @@ require "dischi.php";
     <div id="app">
 
         <header>
-            <nav class="navColor navbar  mb-5">
+            <nav class="principalColor navbar  mb-5">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="img/spotify-logo.png" alt="logo spotify" width="50" class="d-inline-block align-text-top">
@@ -34,13 +34,13 @@ require "dischi.php";
                     <?php
                     foreach ($listaAlbum as $album) {
                         echo '
-                    <div class="col">
-                        <div class="card">
+                    <div class="col mb-3">
+                        <div class="card h-100 principalColor p-2">
                             <img src="' . $album["poster"] . '" alt="' . $album["author"] . '" />
-                            <div class="card-body">
-                                <div>' . $album["title"] . '</div>
-                                <div>' . $album["author"] . '</div>
-                                <div>' . $album["year"] . '</div>
+                            <div class="card-body text-center">
+                                <div class="titleColor">' . $album["title"] . '</div>
+                                <div class="text-white-50">' . $album["author"] . '</div>
+                                <div class="text-white-50">' . $album["year"] . '</div>
                             </div>
                         </div>  
                     </div>
